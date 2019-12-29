@@ -1,0 +1,52 @@
+doctype html
+html
+  head
+    style.
+      #main {
+      margin-top: 5%;
+      }
+    title Sign up
+    // Latest compiled and minified CSS
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css')
+    // jQuery library
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js')
+    // Latest compiled JavaScript
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js')
+  body#main.container
+    .row
+      .col-md-4
+      .col-md-4
+        ul.nav.nav-tabs
+          li.active
+            a(href='#register', data-toggle='tab') Signup
+          li
+            a(href='#login', data-toggle='tab') Login
+        .tab-content
+          #register.tab.tab-pane.in.active
+            h2.well  Become a Member :)
+            form(method='post', action='/form')
+              input.form-control(type='text', name='fname', placeholder='FirstName pls', required)
+              br
+              br
+              input.form-control(type='text', name='lname', placeholder='LastName pls', required)
+              br
+              br
+              input.form-control(type='email', name='mail', placeholder='Mail id pls', required)
+              br
+              br
+              input.form-control(type='password', name='pass', placeholder='Password pls', required)
+              br
+              br
+              input.form-control.btn.btn-success(type='submit', value='Sign up')
+          #login.tab.tab-pane
+            h2.well  Login 
+            form(method='post', action='/login')
+              p #{error}
+              input.form-control(type='email', name='mail', placeholder='Mail id pls', required)
+              br
+              br
+              input.form-control(type='password', name='pass', placeholder='Password pls', required)
+              br
+              br
+              input.form-control.btn.btn-success(type='submit', value='Login')
+      .col-md-4

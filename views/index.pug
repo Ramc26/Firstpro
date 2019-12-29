@@ -1,0 +1,73 @@
+doctype html
+html
+  head
+    style.
+      #main {
+      margin-top: 5%;
+      }
+    title Sign up
+    // Latest compiled and minified CSS
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css')
+    // jQuery library
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js')
+    // Latest compiled JavaScript
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js')
+  body#main.container
+    ul.nav.nav-tabs
+      li.active
+        a(href='#register', data-toggle='tab')
+          b Register
+      li
+        a(href='#login', data-toggle='tab') 
+          b Details
+    .tab-content
+      #register.tab.tab-pane.in.active
+        form(method='post', action='/register')
+          legend.well.well-sm.text-center
+            h1 Book your seat :)
+          input.form-control(type='text', name='fname', placeholder='Name')
+          br
+          br
+          input.form-control(type='text', name='lname', placeholder='Roll number')
+          br
+          br
+          input#date.form-control(placeholder='Date of Birth', type='text', onfocus="(this.type='date')", onblur="(this.type='text')", name='dob')
+          br
+          br
+          input.form-control(type='text', name='branch', placeholder='Branch')
+          br
+          br
+          select.form-control(name='clg')
+            option -------College--------
+            option ACE
+            option ACET
+            option ACOE
+            option Polytechnic
+            option Pharmacy
+            option BBM
+          br
+          br
+          input.form-control(type='email', name='mail', placeholder='Email')
+          br
+          br
+          input.form-control(type='tel', name='mobile', placeholder='Mobile number')
+          br
+          br
+          input.form-control(type='number', name='age', placeholder='Age')
+          br
+          br
+          input.form-control.btn.btn-success(type='submit', name='', value='Sign up')
+          br
+          br
+          br
+          br
+      #login.tab.tab-pane
+        h2.well  Registered Students Details
+
+
+
+
+
+
+
+

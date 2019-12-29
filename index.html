@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    #main {
+      margin-top: 5%;
+    }
+  </style>
+  <title>Sign up</title>
+  <!-- Latest compiled and minified CSS-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <!-- jQuery library-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body class="container" id="main">
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#register" data-toggle="tab"><b>Register</b></a></li>
+    <li><a href="#login" data-toggle="tab">Login</a></li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab tab-pane in active" id="register">
+      <form method="post" action="/register">
+        <legend class="well well-sm text-center">
+          <h1>Become a Member :)</h1>
+        </legend>
+        <input class="form-control" type="text" name="fname" placeholder="Name"><br><br>
+        <input class="form-control" type="text" name="lname" placeholder="Roll number"><br><br>
+        <input class="form-control" id="date" placeholder="Date of Birth" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" name="dob"><br><br>
+        <input class="form-control" type="text" name="branch" placeholder="Branch"><br><br>
+        <select class="form-control" name="clg">
+          <option>-------College--------</option>
+          <option>ACE</option>
+          <option>ACET</option>
+          <option>ACOE</option>
+          <option>Polytechnic</option>
+          <option>Pharmacy</option>
+          <option>BBM</option>
+        </select><br><br>
+        <input class="form-control" type="email" name="mail" placeholder="Email"><br><br>
+        <input class="form-control" type="tel" name="mobile" placeholder="Mobile number"><br><br>
+        <input class="form-control" type="number" name="age" placeholder="Age"><br><br>
+        <input class="form-control btn btn-success" type="submit" name="" value="Sign up"><br><br><br><br>
+      </form>
+    </div>
+    <div class="tab tab-pane" id="login">
+        <h2 class="well"> Registered Students Details </h2>
+        <table class="table table-hover table-bordered">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Roll_number</th>
+              <th>DOB</th>
+              <th>Branch</th>
+              <th>College</th>
+              <th>Email</th>
+              <th>Mobile number</th>
+              <th>Age</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ramarao</td>
+              <td>16mh1a0406</td>
+              <td>26/04/1999</td>
+              <td>ece</td>
+              <td>Acoe</td>
+              <td>ramaraob885@gmail.com</td>
+              <td>7095838715</td>
+              <td>20</td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    #main {
+      margin-top: 5%;
+    }
+  </style>
+  <title>Sign up</title>
+  <!-- Latest compiled and minified CSS-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <!-- jQuery library-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body class="container" id="main">
+  <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      <ul class="nav nav-tabs">
+        <li class="active"><a href="#register" data-toggle="tab">Signup</a></li>
+        <li><a href="#login" data-toggle="tab">Login</a></li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab tab-pane in active" id="register">
+          <h2 class="well"> Become a Member :)</h2>
+          <form method="post" action="/form">
+            <input class="form-control" type="text" name="fname" placeholder="FirstName pls"><br><br>
+            <input class="form-control" type="text" name="lname" placeholder="LastName pls"><br><br>
+            <input class="form-control" type="email" name="mail" placeholder="Mail id pls"><br><br>
+            <input class="form-control" type="password" name="pass" placeholder="Password pls"><br><br>
+            <input class="form-control btn btn-success" type="submit" value="Sign up">
+          </form>
+        </div>
+        <div class="tab tab-pane" id="login">
+          <h2 class="well"> Login </h2>
+          <form method="post" action="/login">
+            <input class="form-control" type="email" name="mail" placeholder="Mail id pls"><br><br>
+            <input class="form-control" type="password" name="pass" placeholder="Password pls"><br><br>
+            <input class="form-control btn btn-success" type="submit" value="Login">
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4"></div>
+  </div>
+</body>
+</html>
